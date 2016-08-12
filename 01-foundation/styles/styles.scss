@@ -1,0 +1,26 @@
+/*mixins*/
+@mixin borderRadius($radius) {
+    -webkit-border-radius:  $radius;
+    -moz-border-radius: $radius;
+    border-radius:$radius;
+}
+
+.header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c348ed;
+        sub-header {
+            font-size: 14px;
+            color: #ee5aa4;
+        };
+};
+
+a {
+    color: $ee7766;
+    &:hover {
+        color: $ff2244;
+    }
+};
+
+/* invoking a mixin */
+@include borderRadius(10px);
